@@ -167,23 +167,30 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="meeting-item">
-                <div class="thumb">
-                  <div class="price">
-                    <span>$43.00</span>
+                 <form action="{{route('checkoutView')}}" method="post">
+                  @csrf
+                  <input type="hidden" name="price" value="43">
+                  <div class="thumb">
+                    <div class="price">
+                      <span>$43.00</span>
+                    </div>
+                    <a ><img src="assets/images/meeting-01.jpg" alt="New Lecturer Meeting"></a>
                   </div>
-                  <a href="meeting-details.html"><img src="assets/images/meeting-01.jpg" alt="New Lecturer Meeting"></a>
-                </div>
-                <div class="down-content">
-                  <div class="date">
-                    <h6 class="mb-3">New Course</h6>
-                  </div>
-                  <a href="meeting-details.html"><h4>data analytics advanced course</h4></a>
-                  <p></p>
+                  <div class="down-content">
+                    <div class="date">
+                      <h6 class="mb-3">New Course</h6>
+                    </div>
+                    <a href="meeting-details.html"><h4>data analytics advanced course</h4></a>
+                   <button type="submit" class="main-button-red btn fw-bold btn-success">Shop Now</button>
+                 </form>
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="meeting-item">
+              <div class="meeting-item"> 
+               <form action="{{route('checkoutView')}}" method="post">
+                @csrf
+                <input type="hidden" name="price" value="12">
                 <div class="thumb">
                   <div class="price">
                     <span>$12.00</span>
@@ -195,41 +202,50 @@
                     <h6 class="mb-3">New Course</h6>
                   </div>
                   <a href="meeting-details.html"><h4>big data advanced course </h4></a>
-                  <p></p>
+                  <button type="submit" class="main-button-red btn fw-bold btn-success">Shop Now</button>
+                </div>
+               </form>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <form action="{{route('checkoutView')}}" method="post">
+                  @csrf
+                  <input type="hidden" name="price" value="43">
+                  <div class="thumb">
+                    <div class="price">
+                      <span>$43.00</span>
+                    </div>
+                    <a href="meeting-details.html"><img src="assets/images/meeting-03.jpg" alt="Higher Education"></a>
+                  </div>
+                  <div class="down-content">
+                    <div class="date">
+                      <h6 class="mb-3">New Course</h6>
+                    </div>
+                    <a href="meeting-details.html"><h4>Spring boot advanced course</h4></a>
+                    <button type="submit" class="main-button-red btn fw-bold btn-success">Shop Now</button>
+                </form>
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="meeting-item">
-                <div class="thumb">
-                  <div class="price">
-                    <span>$43.00</span>
+                <form action="{{route('checkoutView')}}" method="post">
+                  @csrf
+                  <input type="hidden" name="price" value="32">
+                  <div class="thumb">
+                    <div class="price">
+                      <span>$32.00</span>
+                    </div>
+                    <a href="meeting-details.html"><img src="assets/images/meeting-04.jpg" alt="Student Training"></a>
                   </div>
-                  <a href="meeting-details.html"><img src="assets/images/meeting-03.jpg" alt="Higher Education"></a>
-                </div>
-                <div class="down-content">
-                  <div class="date">
-                    <h6 class="mb-3">New Course</h6>
-                  </div>
-                  <a href="meeting-details.html"><h4>Spring boot advanced course</h4></a>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="meeting-item">
-                <div class="thumb">
-                  <div class="price">
-                    <span>$32.00</span>
-                  </div>
-                  <a href="meeting-details.html"><img src="assets/images/meeting-04.jpg" alt="Student Training"></a>
-                </div>
-                <div class="down-content">
-                  <div class="date">
-                    <h6 class="mb-3">New Course</h6>
-                  </div>
-                  <a href="meeting-details.html"><h4>JavaScript Angular advanced course</h4></a>
-                  <p></p>
+                  <div class="down-content">
+                    <div class="date">
+                      <h6 class="mb-3">New Course</h6>
+                    </div>
+                    <a href="meeting-details.html"><h4>JavaScript Angular advanced course</h4></a>
+                    <button type="submit" class="main-button-red btn fw-bold btn-success">Shop Now</button>
+                </form>
                 </div>
               </div>
             </div>
@@ -250,7 +266,7 @@
                 <p>You can write to us and tell us about the problems you are facing, and you will receive the answer via your email</p>
                 <div class="main-button-red">
                   <div class="scroll-to-section"><a href="#contact">Contact Us Now!</a></div>
-              </div>
+                </div>
               </div>
             </div>
             <div class="col-lg-12">
@@ -322,29 +338,37 @@
         </div>
         <div class="col-lg-12">
           <div class="owl-courses-item owl-carousel">
-            <div class="item">
-              <img src="assets/images/react.png" style="max-height:150px">
-              <div class="down-content">
-                <h4>MasteringReact React Js</h4>
-                <div class="info">
-                  <div class="row">
-                    <div class="col-8">
-                      <ul>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                      </ul>
-                    </div>
-                    <div class="col-4">
-                       <span>$16</span>
+            <form action="{{route('checkoutView')}}" method="post">
+              @csrf 
+              <input type="hidden" name="price" value="16">
+              <div class="item">
+                <img src="assets/images/react.png" style="max-height:150px">
+                <div class="down-content">
+                  <h4>MasteringReact React Js</h4>
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-8">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                         <span>$16</span>
+                      </div>
                     </div>
                   </div>
+                  <button type="submit" class="main-button-red btn fw-bold btn-success m-1">Shop Now</button>
                 </div>
               </div>
-            </div>
+            </form>
             <div class="item">
+              <form action="{{route('checkoutView')}}" method="post">
+              @csrf 
+              <input type="hidden" name="price" value="18">
               <img src="assets/images/angular.png" style="max-height:150px">
               <div class="down-content">
                 <h4>Mastering Angular Js</h4>
@@ -362,9 +386,14 @@
                     </div>
                   </div>
                 </div>
+                <button type="submit" class="main-button-red btn fw-bold btn-success m-1">Shop Now</button>
               </div>
+             </form>
             </div>
             <div class="item">
+              <form action="{{route('checkoutView')}}" method="post">
+                @csrf 
+              <input type="hidden" name="price" value="20">
               <img src="assets/images/laravel.png" alt="" style="max-height:150px">
               <div class="down-content">
                 <h4>Mastering Laravel</h4>
@@ -383,53 +412,68 @@
                     </div>
                   </div>
                 </div>
+                <button type="submit" class="main-button-red btn fw-bold btn-success m-1">Shop Now</button>
               </div>
+              </form>
             </div>
             <div class="item">
-              <img src="assets/images/java.png" alt="" style="max-height:150px">
-              <div class="down-content">
-                <h4>Mastering Java</h4>
-                <div class="info">
-                  <div class="row">
-                    <div class="col-8">
-                      <ul>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                      </ul>
+              <form action="{{route('checkoutView')}}" method="post">
+                @csrf 
+              <input type="hidden" name="price" value="20">
+                  <img src="assets/images/java.png" alt="" style="max-height:150px">
+                  <div class="down-content">
+                    <h4>Mastering Java</h4>
+                    <div class="info">
+                      <div class="row">
+                        <div class="col-8">
+                          <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                        <div class="col-4">
+                           <span>$20</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-4">
-                       <span>$20</span>
-                    </div>
+                    <button type="submit" class="main-button-red btn fw-bold btn-success m-1">Shop Now</button>
                   </div>
-                </div>
-              </div>
+                </form>
             </div>
             <div class="item">
-              <img src="assets/images/springboot.png" alt="" style="max-height:150px">
-              <div class="down-content">
-                <h4>Mastering Spring Boot</h4>
-                <div class="info">
-                  <div class="row">
-                    <div class="col-8">
-                      <ul>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                      </ul>
+              <form action="{{route('checkoutView')}}" method="post">
+                @csrf 
+              <input type="hidden" name="price" value="43"> 
+                <img src="assets/images/springboot.png" alt="" style="max-height:150px">
+                <div class="down-content">
+                  <h4>Mastering Spring Boot</h4>
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-8">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                         <span>$43</span>
+                      </div>
                     </div>
-                    <div class="col-4">
-                       <span>$43</span>
-                    </div>
-                  </div>
+                  </div> 
+                  <button type="submit" class="main-button-red btn fw-bold btn-success m-1">Shop Now</button>
                 </div>
-              </div>
+               </form>
             </div>
             <div class="item">
+              <form action="{{route('checkoutView')}}" method="post">
+                @csrf 
+              <input type="hidden" name="price" value="43"> 
               <img src="assets/images/sql.png" alt="" style="max-height:150px">
               <div class="down-content">
                 <h4>Mastering Sql</h4>
@@ -449,10 +493,15 @@
                     </div>
                   </div>
                 </div>
+                <button type="submit" class="main-button-red btn fw-bold btn-success m-1">Shop Now</button>
               </div>
+               </form>
             </div>
             <div class="item">
-              <img src="assets/images/mongodb.jpg" alt="" style="max-height:150px">
+              <form action="{{route('checkoutView')}}" method="post">
+                @csrf 
+              <input type="hidden" name="price" value="18"> 
+                <img src="assets/images/mongodb.jpg" alt="" style="max-height:150px">
               <div class="down-content">
                 <h4>Mastering Mongodb</h4>
                 <div class="info">
@@ -471,51 +520,63 @@
                     </div>
                   </div>
                 </div>
+                <button type="submit" class="main-button-red btn fw-bold btn-success m-1">Shop Now</button>
               </div>
+              </form>
             </div>
             <div class="item">
-              <img src="assets/images/mysql.jpg" alt="" style="max-height:150px">
-              <div class="down-content">
-                <h4>Mastering MySql</h4>
-                <div class="info">
-                  <div class="row">
-                    <div class="col-8">
-                      <ul>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                      </ul>
-                    </div>
-                    <div class="col-4">
-                       <span>$12</span>
+              <form action="{{route('checkoutView')}}" method="post">
+                @csrf 
+              <input type="hidden" name="price" value="12"> 
+                <img src="assets/images/mysql.jpg" alt="" style="max-height:150px">
+                <div class="down-content">
+                  <h4>Mastering MySql</h4>
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-8">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                         <span>$12</span>
+                      </div>
                     </div>
                   </div>
+                  <button type="submit" class="main-button-red btn fw-bold btn-success m-1">Shop Now</button>
                 </div>
-              </div>
+              </form>
             </div>
             <div class="item">
-              <img src="assets/images/symfony.png" alt="" style="max-height:150px">
-              <div class="down-content">
-                <h4>Mastering Symfony</h4>
-                <div class="info">
-                  <div class="row">
-                    <div class="col-8">
-                      <ul>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                      </ul>
-                    </div>
-                    <div class="col-4">
-                       <span>$400</span>
+              <form action="{{route('checkoutView')}}" method="post">
+                @csrf 
+              <input type="hidden" name="price" value="43"> 
+                <img src="assets/images/symfony.png" alt="" style="max-height:150px">
+                <div class="down-content">
+                  <h4>Mastering Symfony</h4>
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-8">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                         <span>$43</span>
+                      </div>
                     </div>
                   </div>
+                  <button type="submit" class="main-button-red btn fw-bold btn-success m-1">Shop Now</button>
                 </div>
-              </div>
+               </form>
             </div>
            
             </div>

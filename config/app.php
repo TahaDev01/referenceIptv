@@ -168,7 +168,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Cartalyst\Stripe\Laravel\StripeServiceProvider::class
+        Cartalyst\Stripe\Laravel\StripeServiceProvider::class,
+        Srmklive\PayPal\Providers\PayPalServiceProvider::class, 
     ])->toArray(),
 
     /*

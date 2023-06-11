@@ -6,7 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-
+session_start();
 
 class checkoutController extends Controller
 {
@@ -18,14 +18,14 @@ class checkoutController extends Controller
        try{
         $dataPayment = $request->input('dataPayment');
         $token = $stripe->tokens()->create([
-            'card' => [
-              'name'=>$dataPayment['name'], 
-              'number' => $dataPayment['number'],
-              'exp_year' =>intval($dataPayment['year']),
-              'exp_month' =>intval($dataPayment['month']),
-              'cvc' => intval($dataPayment['cvc']),   
-            ]
-          ]);
+          'card' => [
+            'name'=>$dataPayment['name'], 
+            'number' => $dataPayment['number'],
+            'exp_year' =>intval($dataPayment['year']),
+            'exp_month' =>intval($dataPayment['month']),
+            'cvc' => intval($dataPayment['cvc']),   
+          ]
+        ]);
 
           if (!isset($token['id'])) {
             return redirect()->route('stripe.add.money');
@@ -48,8 +48,83 @@ class checkoutController extends Controller
        }catch(\Exception $e){
             return response()->json(['error' => 'Internal Server Error'], 500);
        }
-        
+    }
+    
 
+    public function checkoutVisa(Request $request){
+
+      $validator = $request->validate([  
+        'email'=>'required|email',
+        'cvc'=>'required|numeric|min:3',
+        'cc_number'=>'required',
+        'dateExperation'=>'required', 
+      ]);  
+  
+      $dateString = $request->dateExperation; 
+      $date = Carbon::createFromFormat('m/y', $dateString);
+      $month = (int) $date->format('m');
+      $year = (int) $date->format('Y'); 
+
+      $stripe = \Cartalyst\Stripe\Laravel\Facades\Stripe::setApiKey(env('STRIPE_SECRET'));
+            
+      try{
+          $token = $stripe->tokens()->create([
+            'card' => [
+              'name'=>$request->get('name'),
+              'number' => $request->get('cc_number'),
+              'exp_month' => $month,
+              'exp_year' => $year,
+              'cvc' => $request->get('cvc'),  
+            ],
+          ]);
+
+          if (!isset($token['id'])) {
+            return redirect()->route('stripe.add.money');
+          }
+            
+          $charge = $stripe->charges()->create([
+            'card' => $token['id'],
+            'currency' => 'USD',
+            'amount' => $request->get('price'),
+            'description' => 'books',
+          ]);
+            
+          if($charge['status'] == 'succeeded') { 
+            $data = [
+              'StatusVisa' =>$charge['status'], 
+              'id' =>$charge['id'],
+            ]; 
+            return view('payment.success',$data);
+          } else {
+            return view('payment/oops');
+          }
+      } catch (\Exception $e) { 
+        return view('payment/oops');
+      } catch(\Cartalyst\Stripe\Exception\CardErrorException $e) {
+        return view('payment/oops');
+      } catch(\Cartalyst\Stripe\Exception\MissingParameterException $e) {
+        return view('payment/oops');
+      } 
+    }
+
+
+    public function checkoutView(Request $request){
+      if($request->isMethod('get')){
+        $data = $_SESSION['data']; 
+        return view('payment.checkout',$data); 
+      } 
+    
+      $data = [
+        'price' =>$request->price,
+        'offre' =>$request->offre 
+      ]; 
+      $this->saveData($data); 
+      return view('payment.checkout',$data);  
+    }
+
+    public function saveData($data){
+      $_SESSION['data'] = $data;
+      return  $_SESSION['data'] ;
     }
 
 }

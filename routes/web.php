@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\checkoutController;
+use App\Http\Controllers\PaypalController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,8 +18,11 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::post('/checkout',[checkoutController::class , 'checkout'])->name('checkout');
-Route::get('/checkoutView',[checkoutController::class , 'checkoutView'])->name('checkoutView');
+Route::post('/checkoutPaypal',[PaypalController::class , 'makePayment'])->name('checkoutPaypal');
+Route::post('/checkoutVisa',[checkoutController::class , 'checkoutVisa'])->name('checkoutVisa'); 
+
+Route::match(['get','post'],'/checkoutView',[checkoutController::class , 'checkoutView'])->name('checkoutView');
+
 Route::get('success',function(){
   return "success";
 })->name('success'); 
