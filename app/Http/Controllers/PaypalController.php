@@ -100,8 +100,6 @@ class PaypalController extends Controller
 
         try{
            
-            $paypal_conf = \Config::get('paypal');
-            $this->_api_context->setConfig($paypal_conf['settings']);
             $payment->create($this->_api_context); 
         }catch(\PayPal\Exception\PPConnectionException $ex){
             if(\Config::get('app.debug')){
