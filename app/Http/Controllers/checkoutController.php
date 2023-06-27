@@ -116,7 +116,8 @@ class checkoutController extends Controller
     
       $data = [
         'price' =>$request->price,
-        'offre' =>$request->offre 
+        'offre' =>$request->offre,
+        'description'=>$request->description
       ]; 
       $this->saveData($data); 
       return view('payment.checkout',$data);  
@@ -126,5 +127,29 @@ class checkoutController extends Controller
       $_SESSION['data'] = $data;
       return  $_SESSION['data'] ;
     }
+
+
+    public function productPage(Request $request){
+
+      if($request->isMethod('get')){
+        $data = $_SESSION['ProductPage']; 
+        return view('productPage',$data);    
+      } 
+
+      $data = [
+        'price' =>$request->price,
+        'course' =>$request->course,
+        'videos' =>$request->videos,
+        'duration' =>$request->duration,
+        'valeurAjeuter' =>$request->valeurAjeuter
+      ]; 
+      $this->saveProductPage($data); 
+      return view('productPage',$data);      
+    }
+
+    public function saveProductPage($data){
+      $_SESSION['ProductPage'] = $data; 
+    }
+
 
 }

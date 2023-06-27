@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout bootcoding</title>  
+    <title>Checkout</title>   
     <link rel="stylesheet" href="{{asset('assets/css/StripeCheckoutstyle.css')}}">
 </head>
 <body>
@@ -12,9 +12,11 @@
         <form  action="{{route('checkoutPaypal')}}" id="formpaypal"   method="POST">
             @csrf
             <input type="hidden" name="price" id="price" value="{{$price}}">
-            <div style="display: flex ; align-items:center; justify-content:space-between;background-color: rgb(255, 255, 255);padding-left:10px;padding-right:10px;border-radius:5px">
-                <h4>You are about to pay the price IPTV</h4>
-                <h5>{{$price}}USD</h5>
+            <div style=" align-items:center; justify-content:space-between;background-color: rgb(255, 255, 255);padding-left:10px;padding-right:10px;border-radius:5px">
+                <div style="display: flex;justify-content: space-between">
+                    <h5>Price :</h5>
+                    <h5>{{$price}}USD</h5>
+                </div>
             </div>
             <div style="margin-top:20px">
                 <label>Email</label> 
@@ -24,10 +26,10 @@
                 @enderror
             </div>
 
-            <button type="submit" class="btnPaypal" style="width: 100%;margin-top: 20px"> 
+            {{-- <button type="submit" class="btnPaypal" style="width: 100%;margin-top: 20px"> 
                 <span style="margin-right:10px">Pay With </span>
                 <img src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg" >
-            </button>
+            </button> --}}
         </form>
     </div>
 

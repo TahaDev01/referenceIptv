@@ -18,10 +18,16 @@ Route::get('/', function () {
     return view('index');
 });
 
+
+Route::get('/refund',function(){return view('refundePolicy');});
+Route::get('/privacy',function(){return view('privacy');});
+Route::get('/aboutus',function(){return view('aboutus');}); 
 Route::post('/checkoutPaypal',[PaypalController::class , 'makePayment'])->name('checkoutPaypal');
 Route::post('/checkoutVisa',[checkoutController::class , 'checkoutVisa'])->name('checkoutVisa'); 
 
 Route::match(['get','post'],'/checkoutView',[checkoutController::class , 'checkoutView'])->name('checkoutView');
+
+Route::match(['get','post'],'/productPage',[checkoutController::class , 'productPage'])->name('productPage');
 
 Route::get('success',function(){
   return "success";

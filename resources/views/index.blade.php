@@ -13,9 +13,27 @@
         <div class="col-lg-4 col-sm-4">
           <div class="right-icons">
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <a href="https://www.instagram.com/bootcoding1">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg>
+                </li>
+              </a>
+             <a href="">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+              </li>
+             </a>
               <li></li>
             </ul>
           </div>
@@ -31,18 +49,19 @@
               <div class="col-12">
                   <nav class="main-nav">
                       <!-- ***** Logo Start ***** -->
-                      <a href="index.html" class="logo">
-                          BOOTCODING
+                      <a href="/" class="logo">
+                         < BOOTCODING />
                       </a>
                       <!-- ***** Logo End ***** -->
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
                           <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                          <li class="scroll-to-section"><a href="#courses">Shop Now</a></li>
+                          <li class="scroll-to-section"><a href="#courses">Courses</a></li> 
+                          <li><a href="/refund">Refund Policy</a></li> 
+                          <li><a href="/privacy">Privacy Policy</a></li> 
+                          <li><a href="/aboutus">About US</a></li> 
                           <li class="scroll-to-section"><a href="#courses">Courses</a></li> 
                           <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
-                          <li class="scroll-to-section"><a href="#refund">Refund Policy</a></li>  
-                          <li class="scroll-to-section"><a href="#aboutus">About Us</a></li>  
                       </ul>        
                       <a class='menu-trigger'>
                           <span>Menu</span>
@@ -169,9 +188,13 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="meeting-item">
-                 <form action="{{route('checkoutView')}}" method="post">
+                 <form action="{{route('productPage')}}" method="post">
                   @csrf
+                  <input type="hidden" name="valeurAjeuter" value=" Students will learn how to analyze and interpret data effectively, enabling them to make informed decisions based on data-driven insights. This skill is highly valuable in today's data-driven business landscape, where decisions are increasingly influenced by data analysis.">
                   <input type="hidden" name="price" value="43">
+                  <input type="hidden" name="videos" value="30"> 
+                  <input type="hidden" name="course" value="data analytics"> 
+                  <input type="hidden" name="duration" value="This course consists of 30 videos, and each video contains half an hour. It should take a person 30 days to fully complete this course."> 
                   <div class="thumb">
                     <div class="price">
                       <span>$43.00</span>
@@ -182,28 +205,33 @@
                     <div class="date">
                       <h6 class="mb-3">New Course</h6>
                     </div>
-                    <a href="meeting-details.html"><h4>data analytics advanced course</h4></a>
+                    <a ><h4>data analytics advanced course</h4></a>
                    <button type="submit" class="main-button-red btn fw-bold btn-success">Shop Now</button>
+                  
                  </form>
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="meeting-item"> 
-               <form action="{{route('checkoutView')}}" method="post">
-                @csrf
-                <input type="hidden" name="price" value="12">
+                <form action="{{route('productPage')}}" method="post">
+                  @csrf
+                  <input type="hidden" name="valeurAjeuter" value=" Big data has become a critical aspect of many industries, and organizations are actively seeking professionals with expertise in handling and analyzing large volumes of data. By acquiring skills in big data, students position themselves for exciting career opportunities in fields such as data engineering, data science, data analytics, and more.">
+                  <input type="hidden" name="price" value="12"> 
+                  <input type="hidden" name="videos" value="30"> 
+                  <input type="hidden" name="course" value="big data"> 
+                  <input type="hidden" name="duration" value="This course consists of 30 videos, and each video contains half an hour. It should take a person 30 days to fully complete this course."> 
                 <div class="thumb">
                   <div class="price">
                     <span>$12.00</span>
                   </div>
-                  <a href="meeting-details.html"><img src="assets/images/meeting-02.jpg" alt="Online Teaching"></a>
+                  <a ><img src="assets/images/meeting-02.jpg" alt="Online Teaching"></a>
                 </div>
                 <div class="down-content">
                   <div class="date">
                     <h6 class="mb-3">New Course</h6>
                   </div>
-                  <a href="meeting-details.html"><h4>big data advanced course </h4></a>
+                  <a ><h4>big data advanced course </h4></a>
                   <button type="submit" class="main-button-red btn fw-bold btn-success">Shop Now</button>
                 </div>
                </form>
@@ -211,20 +239,24 @@
             </div>
             <div class="col-lg-6">
               <div class="meeting-item">
-                <form action="{{route('checkoutView')}}" method="post">
+                <form action="{{route('productPage')}}" method="post">
                   @csrf
+                  <input type="hidden" name="valeurAjeuter" value=" Spring Boot simplifies the development process by providing a convention-over-configuration approach and auto-configuration capabilities. Students who complete the course gain proficiency in leveraging these features, allowing them to build applications faster and with less boilerplate code. This translates to increased productivity and shorter time to market for software projects."> 
+                  <input type="hidden" name="videos" value="30">  
+                  <input type="hidden" name="course" value="Spring boot"> 
+                  <input type="hidden" name="duration" value="This course consists of 30 videos, and each video contains half an hour. It should take a person 30 days to fully complete this course."> 
                   <input type="hidden" name="price" value="43">
                   <div class="thumb">
                     <div class="price">
                       <span>$43.00</span>
                     </div>
-                    <a href="meeting-details.html"><img src="assets/images/meeting-03.jpg" alt="Higher Education"></a>
+                    <a ><img src="assets/images/meeting-03.jpg" alt="Higher Education"></a>
                   </div>
                   <div class="down-content">
                     <div class="date">
                       <h6 class="mb-3">New Course</h6>
                     </div>
-                    <a href="meeting-details.html"><h4>Spring boot advanced course</h4></a>
+                    <a ><h4>Spring boot advanced course</h4></a>
                     <button type="submit" class="main-button-red btn fw-bold btn-success">Shop Now</button>
                 </form>
                 </div>
@@ -232,20 +264,24 @@
             </div>
             <div class="col-lg-6">
               <div class="meeting-item">
-                <form action="{{route('checkoutView')}}" method="post">
+                <form action="{{route('productPage')}}" method="post">
                   @csrf
+                  <input type="hidden" name="valeurAjeuter" value=" Angular JavaScript is a popular framework for building single-page applications (SPAs). By completing the course, students gain proficiency in Angular and learn how to create dynamic and responsive web applications that deliver a seamless user experience. This skill is highly valuable as SPAs continue to gain traction in modern web development."> 
+                  <input type="hidden" name="videos" value="30">  
+                  <input type="hidden" name="course" value="JavaScript Angular"> 
+                  <input type="hidden" name="duration" value="This course consists of 30 videos, and each video contains half an hour. It should take a person 30 days to fully complete this course."> 
                   <input type="hidden" name="price" value="32">
                   <div class="thumb">
                     <div class="price">
                       <span>$32.00</span>
                     </div>
-                    <a href="meeting-details.html"><img src="assets/images/meeting-04.jpg" alt="Student Training"></a>
+                    <a ><img src="assets/images/meeting-04.jpg" alt="Student Training"></a>
                   </div>
                   <div class="down-content">
                     <div class="date">
                       <h6 class="mb-3">New Course</h6>
                     </div>
-                    <a href="meeting-details.html"><h4>JavaScript Angular advanced course</h4></a>
+                    <a ><h4>JavaScript Angular advanced course</h4></a>
                     <button type="submit" class="main-button-red btn fw-bold btn-success">Shop Now</button>
                 </form>
                 </div>
@@ -256,6 +292,7 @@
       </div>
     </div>
   </section>
+
 
   <section class="apply-now" id="apply">
     <div class="container">
@@ -340,8 +377,12 @@
         </div>
         <div class="col-lg-12">
           <div class="owl-courses-item owl-carousel">
-            <form action="{{route('checkoutView')}}" method="post">
-              @csrf 
+            <form action="{{route('productPage')}}" method="post">
+              @csrf
+              <input type="hidden" name="valeurAjeuter" value="ReactJS is a popular JavaScript library for building user interfaces. By completing the course, students gain a deep understanding of ReactJS and become proficient in developing efficient and interactive web applications. They learn how to leverage React's component-based architecture, virtual DOM, and declarative syntax to create reusable and scalable UI components."> 
+              <input type="hidden" name="videos" value="30">  
+              <input type="hidden" name="course" value="MasteringReact React Js"> 
+              <input type="hidden" name="duration" value="This course consists of 30 videos, and each video contains half an hour. It should take a person 30 days to fully complete this course."> 
               <input type="hidden" name="price" value="16">
               <div class="item">
                 <img src="assets/images/react.png" style="max-height:150px">
@@ -367,10 +408,15 @@
                 </div>
               </div>
             </form>
-            <div class="item">
-              <form action="{{route('checkoutView')}}" method="post">
-              @csrf 
+            <form action="{{route('productPage')}}" method="post">
+              @csrf
+              <input type="hidden" name="valeurAjeuter" value=" Angular JavaScript is a popular framework for building single-page applications (SPAs). By completing the course, students gain proficiency in Angular and learn how to create dynamic and responsive web applications that deliver a seamless user experience. This skill is highly valuable as SPAs continue to gain traction in modern web development."> 
+              <input type="hidden" name="videos" value="30">  
+              <input type="hidden" name="course" value="Mastering Angular Js"> 
+              <input type="hidden" name="duration" value="This course consists of 30 videos, and each video contains half an hour. It should take a person 30 days to fully complete this course."> 
               <input type="hidden" name="price" value="18">
+            <div class="item">
+             
               <img src="assets/images/angular.png" style="max-height:150px">
               <div class="down-content">
                 <h4>Mastering Angular Js</h4>
@@ -392,10 +438,15 @@
               </div>
              </form>
             </div>
-            <div class="item">
-              <form action="{{route('checkoutView')}}" method="post">
-                @csrf 
+            <form action="{{route('productPage')}}" method="post">
+              @csrf
+              <input type="hidden" name="valeurAjeuter" value="Laravel is known for its elegant syntax, simplicity, and extensive set of features. By completing the course, students gain proficiency in Laravel and learn how to build web applications rapidly. The framework provides a wide range of tools and functionalities that streamline the development process, allowing developers to create robust and feature-rich applications with ease."> 
+              <input type="hidden" name="videos" value="30">  
+              <input type="hidden" name="course" value="Mastering Laravel"> 
+              <input type="hidden" name="duration" value="This course consists of 30 videos, and each video contains half an hour. It should take a person 30 days to fully complete this course."> 
               <input type="hidden" name="price" value="20">
+            <div class="item">
+              
               <img src="assets/images/laravel.png" alt="" style="max-height:150px">
               <div class="down-content">
                 <h4>Mastering Laravel</h4>
@@ -418,10 +469,14 @@
               </div>
               </form>
             </div>
-            <div class="item">
-              <form action="{{route('checkoutView')}}" method="post">
-                @csrf 
+            <form action="{{route('productPage')}}" method="post">
+              @csrf
+              <input type="hidden" name="valeurAjeuter" value="Java is a versatile programming language that can be used to develop a wide range of applications, from desktop and web applications to mobile apps and enterprise systems. By completing the course, students gain proficiency in Java and can apply their skills to various platforms and domains. Additionally, Java's 'write once, run anywhere' principle allows applications to be easily deployed across different operating systems, making it highly portable."> 
+              <input type="hidden" name="videos" value="30">  
+              <input type="hidden" name="course" value="Mastering Java"> 
+              <input type="hidden" name="duration" value="This course consists of 30 videos, and each video contains half an hour. It should take a person 30 days to fully complete this course."> 
               <input type="hidden" name="price" value="20">
+              <div class="item"> 
                   <img src="assets/images/java.png" alt="" style="max-height:150px">
                   <div class="down-content">
                     <h4>Mastering Java</h4>
@@ -445,10 +500,14 @@
                   </div>
                 </form>
             </div>
-            <div class="item">
-              <form action="{{route('checkoutView')}}" method="post">
-                @csrf 
+            <form action="{{route('productPage')}}" method="post">
+              @csrf
+              <input type="hidden" name="valeurAjeuter" value="Spring Boot simplifies the development process by providing a convention-over-configuration approach and auto-configuration capabilities. Students who complete the course gain proficiency in leveraging these features, allowing them to build applications faster and with less boilerplate code. This translates to increased productivity and shorter time to market for software projects."> 
+              <input type="hidden" name="videos" value="30">  
+              <input type="hidden" name="course" value="Mastering Spring Boot"> 
+              <input type="hidden" name="duration" value="This course consists of 30 videos, and each video contains half an hour. It should take a person 30 days to fully complete this course."> 
               <input type="hidden" name="price" value="43"> 
+            <div class="item">
                 <img src="assets/images/springboot.png" alt="" style="max-height:150px">
                 <div class="down-content">
                   <h4>Mastering Spring Boot</h4>
@@ -472,10 +531,14 @@
                 </div>
                </form>
             </div>
-            <div class="item">
-              <form action="{{route('checkoutView')}}" method="post">
-                @csrf 
-              <input type="hidden" name="price" value="43"> 
+            <form action="{{route('productPage')}}" method="post">
+              @csrf
+              <input type="hidden" name="valeurAjeuter" value=" SQL is the standard language for managing and manipulating relational databases. By completing the course, students gain proficiency in SQL and learn how to effectively interact with databases. They acquire skills in creating, modifying, and querying databases, as well as managing data through operations such as insertion, deletion, and updating. These skills are valuable in various industries where data management is crucial."> 
+              <input type="hidden" name="videos" value="30">  
+              <input type="hidden" name="course" value="Mastering Sql"> 
+              <input type="hidden" name="duration" value="This course consists of 30 videos, and each video contains half an hour. It should take a person 30 days to fully complete this course."> 
+             <input type="hidden" name="price" value="20"> 
+            <div class="item">  
               <img src="assets/images/sql.png" alt="" style="max-height:150px">
               <div class="down-content">
                 <h4>Mastering Sql</h4>
@@ -499,10 +562,15 @@
               </div>
                </form>
             </div>
-            <div class="item">
-              <form action="{{route('checkoutView')}}" method="post">
-                @csrf 
+            <form action="{{route('productPage')}}" method="post">
+              @csrf
+              <input type="hidden" name="valeurAjeuter" value="  MongoDB is a popular NoSQL (non-relational) database that provides flexibility, scalability, and performance advantages over traditional relational databases. By completing the course, students gain proficiency in MongoDB and learn how to work with a NoSQL database, understand its principles, and leverage its features effectively."> 
+              <input type="hidden" name="videos" value="30">  
+              <input type="hidden" name="course" value="Mastering Mongodb"> 
+              <input type="hidden" name="duration" value="This course consists of 30 videos, and each video contains half an hour. It should take a person 30 days to fully complete this course."> 
               <input type="hidden" name="price" value="18"> 
+            <div class="item">
+             
                 <img src="assets/images/mongodb.jpg" alt="" style="max-height:150px">
               <div class="down-content">
                 <h4>Mastering Mongodb</h4>
@@ -526,10 +594,14 @@
               </div>
               </form>
             </div>
-            <div class="item">
-              <form action="{{route('checkoutView')}}" method="post">
-                @csrf 
+            <form action="{{route('productPage')}}" method="post">
+              @csrf
+              <input type="hidden" name="valeurAjeuter" value="  MySQL is one of the most widely used relational database management systems (RDBMS) in the world. By completing the course, students gain proficiency in MySQL and learn how to effectively manage relational databases. They acquire skills in creating and managing database structures, designing efficient schemas, and querying data using SQL (Structured Query Language)."> 
+              <input type="hidden" name="videos" value="30">  
+              <input type="hidden" name="course" value="Mastering MySql"> 
+              <input type="hidden" name="duration" value="This course consists of 30 videos, and each video contains half an hour. It should take a person 30 days to fully complete this course."> 
               <input type="hidden" name="price" value="12"> 
+            <div class="item"> 
                 <img src="assets/images/mysql.jpg" alt="" style="max-height:150px">
                 <div class="down-content">
                   <h4>Mastering MySql</h4>
@@ -553,10 +625,14 @@
                 </div>
               </form>
             </div>
-            <div class="item">
-              <form action="{{route('checkoutView')}}" method="post">
-                @csrf 
-              <input type="hidden" name="price" value="43"> 
+            <form action="{{route('productPage')}}" method="post">
+              @csrf
+              <input type="hidden" name="valeurAjeuter" value="Symfony is a high-performance PHP framework known for its robustness and scalability. By completing the course, students gain proficiency in Symfony and learn how to build powerful web applications. They acquire skills in leveraging Symfony's extensive set of components and tools to develop scalable, maintainable, and feature-rich applications."> 
+              <input type="hidden" name="videos" value="30">  
+              <input type="hidden" name="course" value="Mastering Symfony"> 
+              <input type="hidden" name="duration" value="This course consists of 30 videos, and each video contains half an hour. It should take a person 30 days to fully complete this course."> 
+             <input type="hidden" name="price" value="43"> 
+            <div class="item"> 
                 <img src="assets/images/symfony.png" alt="" style="max-height:150px">
                 <div class="down-content">
                   <h4>Mastering Symfony</h4>
@@ -638,81 +714,6 @@
       </div>
     </div>
   </section>
-   
-  <section class="contact-us" id="refund">  
-    <div class="container">
-      <div class="row">
-        <div class=" align-self-center">
-         
-          <div class="row">
-            <div class="col-lg-12">
-              <form id="contact" action="" method="post">
-                <div class="row">
-                  <h2>Refund Policy</h2>
-                  <p>
-                    Thank you for choosing our web store for your development courses. We strive to provide the best learning experience and customer service possible. However, we understand that there may be circumstances where you might need to request a refund. This refund policy outlines the conditions and process for obtaining a refund.
-                    
-                    Eligibility for Refund:
-                    
-                    You are eligible for a refund within a specified time frame from the date of purchase, which is 12 days.
-                    Refunds will be considered for courses that have not been accessed or partially accessed, as indicated by our system.
-                    Refund Process:
-                    
-                    To request a refund, please contact our customer support team at live .
-                    Provide your order details, including the course name, purchase date, and any other relevant information.
-                    Our customer support team will review your request and respond within  6 houres.
-                    If your refund request is approved, the refund will be processed using the original payment method within 1 day.
-                    Please note that refunds may take some time to reflect in your account, depending on the policies of your financial institution.
-                    
-                    </p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <section class="contact-us" id="aboutus">  
-    <div class="container">
-      <div class="row">
-        <div class=" align-self-center">
-         
-          <div class="row">
-            <div class="col-lg-12">
-              <form id="contact" action="" method="post">
-                <div class="row">
-                  <h2>About Us</h2>
-                  <p>
-                    Welcome to our web store, your premier destination for high-quality development informatique courses. We are passionate about empowering individuals with the knowledge and skills they need to thrive in the rapidly evolving world of technology.
-
-                    At BOOT-CODING, we believe that education is the key to personal and professional growth. Our carefully curated selection of courses is designed to cater to beginners as well as experienced professionals, ensuring that there is something for everyone.
-                    
-                    Why Choose Us?
-                    
-                    Expert Instructors: Our courses are developed and taught by industry experts with extensive experience in the field of development informatique. They bring real-world knowledge and practical insights to the learning experience, enabling you to gain relevant skills that can be applied immediately.
-                    
-                    Comprehensive Curriculum: We offer a wide range of courses covering various aspects of development informatique, including programming languages, web development, mobile app development, data science, and more. Our curriculum is regularly updated to keep pace with the latest industry trends and technologies.
-                    
-                    Interactive Learning: We believe that active engagement is crucial for effective learning. Our courses are designed to be interactive, with hands-on exercises, coding projects, quizzes, and assessments that help you reinforce your understanding and apply what you've learned.
-                    
-                    Flexible Learning Options: We understand that everyone has unique learning preferences and schedules. That's why we offer flexible learning options, including self-paced courses that allow you to learn at your own convenience. You can access the course materials anytime, anywhere, and progress at a pace that suits you.
-                    
-                    Continuous Support: We are committed to your success and provide ongoing support throughout your learning journey. Our dedicated support team is available to assist you with any questions or technical issues you may encounter. We also foster a vibrant online community where you can connect with fellow learners, share insights, and seek guidance.
-                    
-                    Competitive Pricing and Value: We believe in providing exceptional value for your investment. Our courses are priced competitively, offering you affordable access to high-quality educational content. We strive to deliver maximum value by ensuring that our courses are comprehensive, engaging, and relevant to your needs.
-                    
-                    Join us at BOOT-CODING and embark on an exciting learning journey in development informatique. Whether you are looking to start a new career, enhance your skills, or stay updated with the latest technologies, we have the courses to help you achieve your goals.
-                    
-                    We look forward to being a part of your learning and growth!
-                    
-                    </p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
   <section class="contact-us" id="contact">
     <div class="container">
@@ -764,15 +765,11 @@
               </li>
               <li>
                 <h6>Email Address</h6>
-                <span>bootcoding@gmail.com</span>
+                <span>contact@boot-coding.com</span>
               </li>
               <li>
                 <h6>Street Address</h6>
                 <span>Street Address</span>
-              </li>
-              <li>
-                <h6>Website URL</h6>
-                <span>www.bootcoding.codes</span>
               </li>
             </ul>
           </div>
